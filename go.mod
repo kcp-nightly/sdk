@@ -8,8 +8,8 @@ require (
 	github.com/egymgmbh/go-prefix-writer v0.0.0-20180609083313-7326ea162eca
 	github.com/go-logr/logr v1.4.2
 	github.com/google/go-cmp v0.7.0
-	github.com/kcp-dev/apimachinery/v2 v2.0.1-0.20250717064240-78e565b4a69a
-	github.com/kcp-dev/client-go v0.0.0-20251017134924-34a207de127f
+	github.com/kcp-dev/apimachinery/v2 v2.0.0-20250728122101-adbf20db3e51
+	github.com/kcp-dev/client-go v0.0.0-20250728134101-0355faa9361b
 	github.com/kcp-dev/logicalcluster/v3 v3.0.5
 	github.com/martinlindhe/base36 v1.1.1
 	github.com/muesli/reflow v0.3.0
@@ -114,6 +114,8 @@ require (
 	sigs.k8s.io/json v0.0.0-20241014173422-cfa47c3a1cc8 // indirect
 )
 
-replace github.com/kcp-dev/apimachinery/v2 => github.com/kcp-dev/apimachinery/v2 v2.0.0-20251017134924-175b5bf68c05
-
-replace github.com/kcp-dev/code-generator/v3 => github.com/kcp-dev/code-generator/v3 v3.0.0-20251017134924-c023ef289dfc
+replace (
+	github.com/kcp-dev/apimachinery/v2 => ../apimachinery
+	github.com/kcp-dev/client-go => ../client-go
+	github.com/kcp-dev/code-generator/v3 => ../code-generator
+)
